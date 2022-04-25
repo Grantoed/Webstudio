@@ -1,0 +1,42 @@
+.specialities__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.specialities__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.thumb {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-bg-color;
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    text-align: center;
+  }
+
+  &__text {
+    line-height: 1.71;
+  }
+}

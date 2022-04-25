@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-bg-color;
+}
+
+.auth-block {
+  text-align: center;
+}
+
+.footer-nav {
+  margin-bottom: 60px;
+}
+
+.footer-nav__item {
+  line-height: 1.71;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-nav__address {
+  color: $primary-bg-color;
+
+  font-style: normal;
+}
+
+.footer-nav__auth {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,9 @@
+@keyframes menuUnderline {
+  0% {
+    transform: translateY(29px) scaleX(100%);
+  }
+
+  100% {
+    transform: translateY(29px) scaleX(50%);
+  }
+}

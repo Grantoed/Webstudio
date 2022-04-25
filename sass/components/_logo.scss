@@ -1,0 +1,29 @@
+.logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.logo__web {
+  color: $logo-web-primary;
+}
+
+.logo__studio {
+  color: $logo-studio-primary;
+
+  &--inverse {
+    color: $logo-studio-secondary;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+
+  margin-right: 0;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,41 @@
+%button {
+  width: 200px;
+  height: 50px;
+  background-color: $accent-color;
+  color: $primary-bg-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.button__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: $primary-bg-color;
+}
+
+.hero__button {
+  @extend %button;
+}
+
+.form__button {
+  @extend %button;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub-form__button {
+  @extend %button;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
