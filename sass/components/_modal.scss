@@ -1,10 +1,6 @@
 .modal {
-  z-index: 99;
   transform: scale(1);
 
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -16,9 +12,34 @@
   border-radius: 4px;
 
   transition: transform $transition;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    min-width: 450px;
+    min-height: 610px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 530px;
+    min-height: 580px;
+  }
 
   .backdrop--is-hidden & {
     transform: scale(0.9);
+
+    @media screen and (min-width: 768px) {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
   }
 
   &__text {

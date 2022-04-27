@@ -2,20 +2,22 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 98;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
 
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
   background-color: rgba(0, 0, 0, 0.5);
-
-  overflow-y: scroll;
 
   opacity: 1;
   transition: opacity $transition;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-y: scroll;
+  }
 
   &--is-hidden {
     visibility: hidden;

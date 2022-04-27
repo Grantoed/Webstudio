@@ -3,14 +3,32 @@
   padding-bottom: 60px;
 
   background-color: $footer-bg-color;
+
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: baseline;
+    }
+  }
 }
 
 .auth-block {
-  text-align: center;
-}
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 
-.footer-nav {
-  margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    margin-left: 76px;
+  }
 }
 
 .footer-nav__item {
@@ -18,6 +36,10 @@
 
   &:not(:last-child) {
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 

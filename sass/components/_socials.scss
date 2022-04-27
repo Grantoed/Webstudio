@@ -45,14 +45,27 @@
 
 // footer-social
 .socials-block {
-  margin-bottom: 60px;
-
   &__text {
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: $primary-bg-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+
+  @media screen and (max-width: 1199px) {
     text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
 }

@@ -1,10 +1,37 @@
 .portfolio__container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.portfolio__item:not(:last-child) {
-  margin-bottom: 30px;
+.portfolio__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.portfolio__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .portfolio__thumb {
@@ -64,6 +91,10 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 146px;
+  }
 }
 .portfolio__product-name {
   margin-bottom: 4px;

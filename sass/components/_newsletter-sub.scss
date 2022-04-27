@@ -6,15 +6,33 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $primary-bg-color;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 1199px) {
     text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
 .sub-form {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
 
-  &__field {
-    margin-bottom: 20px;
+    &__field {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -26,6 +44,14 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;

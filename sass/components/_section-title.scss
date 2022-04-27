@@ -7,6 +7,12 @@
   margin-bottom: 30px;
   text-align: center;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+
   &--hidden {
     position: absolute;
     width: 1px;

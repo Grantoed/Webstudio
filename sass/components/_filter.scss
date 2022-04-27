@@ -1,16 +1,30 @@
 .filter {
   margin-bottom: 40px;
 
-  &__item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.filter__item {
+  @media screen and (max-width: 767px) {
     display: inline-block;
+
+    &:nth-child(n + 4) {
+      margin-top: 15px;
+    }
   }
 
-  &__item:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 8px;
-  }
-
-  &__item:nth-child(n + 4) {
-    margin-top: 15px;
   }
 }
 

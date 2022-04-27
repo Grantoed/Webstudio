@@ -18,10 +18,8 @@
   background-position: center;
   color: $primary-bg-color;
 
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
+    height: 600px;
   }
 }
 
@@ -29,10 +27,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -50,4 +45,11 @@
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 700px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
