@@ -61,15 +61,15 @@
     padding-right: 40px;
     background-color: #fff;
     z-index: 1;
+
+    &--is-open {
+      display: block;
+    }
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-  }
-
-  &--is-open {
-    display: block;
   }
 }
 

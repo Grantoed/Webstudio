@@ -202,6 +202,9 @@ h6 {
     background-color: #fff;
     z-index: 1;
   }
+  .menu-block--is-open {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -213,10 +216,6 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-.menu-block--is-open {
-  display: block;
 }
 
 .menu-block__socials-list {
