@@ -739,6 +739,21 @@ h6 {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .form__textarea::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .form__textarea:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form__textarea::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form__textarea::placeholder {
+    font-size: 12px;
+  }
+}
+
 .form__policy-field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,9 +788,20 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 12px;
   line-height: 1.17;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .form__policy-label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__policy-label {
+    line-height: 1.71;
+  }
 }
 
 .form__icon-checkbox {
