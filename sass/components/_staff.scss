@@ -37,6 +37,10 @@
       width: calc((100% - 4 * 15px) / 2);
     }
 
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
         margin-bottom: 30px;

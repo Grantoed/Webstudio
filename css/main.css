@@ -1107,6 +1107,12 @@ h6 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .staff__item {
+    width: 270px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .staff__item:not(:last-child) {
     margin-bottom: 30px;
