@@ -131,12 +131,40 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/technokriak.jpg"
-                    alt="Скриншот сайта Технокряк"
-                    class="portfolio__image"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/technokriak-370.jpg   370w,
+                        ./images/technokriak-740.jpg   740w,
+                        ./images/technokriak-1110.jpg 1110w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33.3vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/technokriak-354.jpg   354w,
+                        ./images/technokriak-708.jpg   708w,
+                        ./images/technokriak-1062.jpg 1062w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 768px) 50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/technokriak-450.jpg  450w,
+                        ./images/technokriak-900.jpg  900w,
+                        ./images/technokriak-1350.jpg 1350s
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/technokriak-354.jpg"
+                      alt="Скриншот сайта Технокряк"
+                      class="portfolio__image"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
