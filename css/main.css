@@ -155,6 +155,12 @@ h6 {
   display: none;
 }
 
+.nav__btn--is-open {
+  position: fixed;
+  top: 0;
+  right: 15px;
+}
+
 .nav__btn--is-open .nav__icon-cross {
   display: block;
 }
@@ -189,11 +195,11 @@ h6 {
 
 @media screen and (max-width: 767px) {
   .menu-block {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
-    height: 796px;
+    height: 100vh;
     width: 100%;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -201,9 +207,19 @@ h6 {
     padding-right: 40px;
     background-color: #fff;
     z-index: 1;
+    overflow-y: scroll;
   }
   .menu-block--is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -255,7 +271,6 @@ h6 {
   .site-nav {
     font-size: 40px;
     line-height: 1.18;
-    margin-bottom: 302px;
   }
   .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
