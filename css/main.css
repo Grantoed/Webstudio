@@ -962,18 +962,18 @@ h6 {
   overflow: hidden;
 }
 
-.specialities__container {
+.specialities {
   padding-top: 60px;
 }
 
 @media screen and (max-width: 1199px) {
-  .specialities__container {
+  .specialities {
     padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .specialities__container {
+  .specialities {
     padding-top: 94px;
   }
 }
@@ -1060,12 +1060,12 @@ h6 {
   line-height: 1.71;
 }
 
-.profile__container {
+.profile {
   display: none;
 }
 
 @media screen and (min-width: 1200px) {
-  .profile__container {
+  .profile {
     display: block;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1117,16 +1117,13 @@ h6 {
 }
 
 .staff {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
-.staff__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 @media screen and (min-width: 1200px) {
-  .staff__container {
+  .staff {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1294,13 +1291,13 @@ h6 {
   }
 }
 
-.clients__container {
+.clients {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .clients__container {
+  .clients {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1614,13 +1611,13 @@ h6 {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio__container {
+.portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__container {
+  .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
   }
