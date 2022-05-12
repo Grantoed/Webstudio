@@ -55,13 +55,13 @@
 }
 
 .menu-block {
+  width: 100%;
   @media screen and (max-width: 767px) {
     position: fixed;
     top: 0;
     left: 0;
     display: none;
     height: 100vh;
-    width: 100%;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -125,17 +125,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
 
-    margin-right: 84px;
+    margin-right: auto;
 
     line-height: 1.14;
 
     &__item:not(:last-child) {
       margin-right: 50px;
     }
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 305px;
   }
 }
 
