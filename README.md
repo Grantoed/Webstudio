@@ -1,1 +1,1 @@
-# goit-markup-hw-08
+Module 8. Adaptive Markup
